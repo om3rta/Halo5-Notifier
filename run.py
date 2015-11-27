@@ -5,7 +5,7 @@ import time
 import sys
 
 user_name = sys.argv[1]
-api_key = "4e46f5a557bb4974944ca55024dbf3f3"
+api_key = ""
 
 grab = GrabStats()
 stats = grab.last_game_info(user_name, api_key)
