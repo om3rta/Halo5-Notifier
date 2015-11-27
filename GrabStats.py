@@ -33,9 +33,3 @@ class GrabStats:
 		designation_name = self.designation[designation_id]		
 		playlist_info_dict = {"designation": designation_name, "tier": tier, "csr": csr, "progress": percent_to_next}
 		return playlist_info_dict
-
-
-#Call up last game stats
-#post notification for that game type
-#wait till last game id changes
-#post notificaiton for that game type
