@@ -6,7 +6,7 @@ class GrabStats:
 	def __init__(self):
 		self.playlists_id = {"7b7e892c-d9b7-4b03-bef8-c6a071df28ef": "Free for All", "f27a65eb-2d11-4965-aa9c-daa088fa5c9c": "Swat",
 				"f72e0ef0-7c4a-4307-af78-8e38dac3fdba": "Breakout", "892189e9-d712-4bdb-afa7-1ccab43fbed4": "Slayer", 
-				"c98949ae-60a8-43dc-85d7-0feb0b92e719": "Team Arena"}
+				"c98949ae-60a8-43dc-85d7-0feb0b92e719": "Team Arena", "88b7de19-113c-4beb-af7f-8553aeda3f4c": "Rumble Rockets"}
 
 		self.designation = ["None", "Bronze", "Silver", "Gold", "Platinum", "Diamond", "Onyx", "Champion"]
 
@@ -31,5 +31,5 @@ class GrabStats:
 				percent_to_next = player_info["Csr"]["PercentToNextTier"]
 		
 		designation_name = self.designation[designation_id]		
-		playlist_info_dict = {"designation": designation_name, "tier": tier, "csr": csr, "progress": percent_to_next}
+		playlist_info_dict = {"designation_id": designation_id, "designation": designation_name, "tier": tier, "csr": csr, "progress": percent_to_next}
 		return playlist_info_dict

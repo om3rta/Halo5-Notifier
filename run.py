@@ -14,9 +14,18 @@ notify = BuildNotification()
 last_playlist = grab.playlist_stats(stats["PlaylistId"], user_name, api_key)
 
 icon = str(last_playlist["designation"]) + str(last_playlist["tier"]) + ".png"
-rank = last_playlist["designation"] + " " + str(last_playlist["tier"])
+if last_playlist["designation_id"] < 6:
+	rank = last_playlist["designation"] + " " + str(last_playlist["tier"])
+	progress = last_playlist["progress"]
+	icon = str(last_playlist["designation"]) + str(last_playlist["tier"]) + ".png"
+	onyxchamp = False
+else:
+	rank = last_playlist["designation"]
+	progress = last_playlist["csr"]
+	icon = str(last_playlist["designation"]) + ".png"
+	onyxchamp = True
 
-send_notification = notify.send_notification(stats["PlaylistName"], icon, last_playlist["progress"], user_name, rank)
+send_notification = notify.send_notification(stats["PlaylistName"], icon, progress, user_name, rank, onyxchamp)
 
 current_id = stats["PlaylistId"]
 new_id = stats["PlaylistId"]
