@@ -5,7 +5,7 @@ Halo5-Notifier does pretty much what the subtitle up above says it does. Once yo
 
 Requirements:
 
-You should only need two things that don't come stock in Python/OS X, requests and terminal-notifier. Install requests with pip (pip install requests), and install terminal-notifier (brew install terminal notifier).
+You should only need two things that don't come stock in Python/OS X, requests and terminal-notifier. Install requests with pip (pip install requests), and install terminal-notifier brew (brew install terminal-notifier). Terminal-notifier may need to be linked to your Applications directory. Just follow the instructions that brew prints out after you install.
 
 Running:
 
