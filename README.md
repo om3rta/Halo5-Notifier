@@ -9,6 +9,6 @@ You should only need two things that don't come stock in Python/OS X, requests a
 
 Running:
 
-Add your api key to the api_key variable in run.py, then just run 'Python run.py "player name"' from wherever you clone the repository.
+You'll need an api key for the Halo Api. You can get an api key by signing up for a free developer account at https://developer.haloapi.com. Once you have your api key, run "python run.py" from wherever you've cloned or downloaded the repository to.
 
-You can get an api key by signing up for a free developer account at https://developer.haloapi.com
+You will first be prompted to provide a user to track, then you will be prompted to provide your api key. After that, you're all set :)
